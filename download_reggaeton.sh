@@ -1,0 +1,96 @@
+#!/bin/bash
+
+mkdir -p "Reggaeton_Party/Warmup"
+mkdir -p "Reggaeton_Party/Build"
+mkdir -p "Reggaeton_Party/Peak"
+mkdir -p "Reggaeton_Party/Closing"
+
+dl() {
+    local folder="$1"
+    local query="$2"
+    local filename="$3"
+    echo "Downloading: $query"
+    yt-dlp -x --audio-format mp3 \
+        --audio-quality 0 \
+        -o "${folder}/${filename}.mp3" \
+        "ytsearch1:${query}" 2>/dev/null
+}
+
+# ============ WARM-UP (melodic reggaeton, 2.5-3 min each) ============
+dl "Reggaeton_Party/Warmup" "Daddy Yankee Con Calma" "01_Daddy_Yankee_Con_Calma"
+dl "Reggaeton_Party/Warmup" "Daddy Yankee Gasolina" "02_Daddy_Yankee_Gasolina"
+dl "Reggaeton_Party/Warmup" "Daddy Yankee Despacito Luis Fonsi" "03_Daddy_Yankee_Despacito"
+dl "Reggaeton_Party/Warmup" "Daddy Yankee Leto" "04_Daddy_Yankee_Leto"
+dl "Reggaeton_Party/Warmup" "Daddy Yankee Tití Me Preguntó Bad Bunny" "05_Daddy_Yankee_Titi_Me_Pregunto"
+dl "Reggaeton_Party/Warmup" "Daddy Yankee Sola Que Te Quiero" "06_Daddy_Yankee_Sola_Que_Te_Quiero"
+dl "Reggaeton_Party/Warmup" "Don Omar Danza Kuduro Lucenzo" "07_Don_Omar_Danza_Kuduro"
+dl "Reggaeton_Party/Warmup" "Don Omar Baila Baila Baila" "08_Don_Omar_Baila_Baila_Baila"
+dl "Reggaeton_Party/Warmup" "Wisin y Yandel Bailando" "09_Wisin_Yandel_Bailando"
+dl "Reggaeton_Party/Warmup" "Wisin y Yandel Que Le Pegue El Gusto" "10_Wisin_Yandel_Que_Le_Pegue"
+dl "Reggaeton_Party/Warmup" "Nicky Jam El Amante" "11_Nicky_Jam_El_Amante"
+dl "Reggaeton_Party/Warmup" "Nicky Jam Atrévete Baby Baby" "12_Nicky_Jam_Atrevete"
+dl "Reggaeton_Party/Warmup" "Rauw Alejandro Titi Me Pregunto" "13_Rauw_Alejandro_Titi"
+dl "Reggaeton_Party/Warmup" "Rauw Alejandro La Rompió" "14_Rauw_Alejandro_La_Rompio"
+dl "Reggaeton_Party/Warmup" "Karol G Provenza" "15_Karol_G_Provenza"
+dl "Reggaeton_Party/Warmup" "Karol G TQG Shakira" "16_Karol_G_TQG"
+
+# ============ BUILD (classic and modern bangers) ============
+dl "Reggaeton_Party/Build" "Daddy Yankee Rompe" "17_Daddy_Yankee_Rompe"
+dl "Reggaeton_Party/Build" "Daddy Yankee Daddy Yankee" "18_Daddy_Yankee_Daddy_Yankee"
+dl "Reggaeton_Party/Build" "Daddy Yankee Lo Que Le Dijiste A Mi Ex" "19_Daddy_Yankee_Lo_Que_Le_Dijiste"
+dl "Reggaeton_Party/Build" "Daddy Yankee Peloteo" "20_Daddy_Yankee_Peloteo"
+dl "Reggaeton_Party/Build" "Daddy Yankee Tu Me Miras Así" "21_Daddy_Yankee_Tu_Me_Miras"
+dl "Reggaeton_Party/Build" "Daddy Yankee La Gozadera" "22_Daddy_Yankee_La_Gozadera"
+dl "Reggaeton_Party/Build" "J Balvin Mi Gente Willy William" "23_J_Balvin_Mi_Gente"
+dl "Reggaeton_Party/Build" "J Balvin Ginza Tainy" "24_J_Balvin_Ginza"
+dl "Reggaeton_Party/Build" "J Balvin Ay Ay Ay" "25_J_Balvin_Ay_Ay_Ay"
+dl "Reggaeton_Party/Build" "Bad Bunny Yonaguni" "26_Bad_Bunny_Yonaguni"
+dl "Reggaeton_Party/Build" "Bad Bunny Tití Me Preguntó" "27_Bad_Bunny_Titi_Me_Pregunto"
+dl "Reggaeton_Party/Build" "Bad Bunny Me Porteo" "28_Bad_Bunny_Me_Porteo"
+dl "Reggaeton_Party/Build" "Anuel AA Ella y Yo" "29_Anuel_AA_Ella_y_Yo"
+dl "Reggaeton_Party/Build" "Anuel AA China" "30_Anuel_AA_China"
+dl "Reggaeton_Party/Build" "Ozuna Sola" "31_Ozuna_Sola"
+dl "Reggaeton_Party/Build" "Ozuna Tití Me Preguntó" "32_Ozuna_Titi"
+dl "Reggaeton_Party/Build" "Maluma Felices los 4" "33_Maluma_Felices_Los_4"
+dl "Reggaeton_Party/Build" "Maluma La Passion" "34_Maluma_La_Passion"
+dl "Reggaeton_Party/Build" "Sech Bailando Descalzos" "35_Sech_Bailando_Descalzos"
+dl "Reggaeton_Party/Build" "Sech Propuesta Indecente" "36_Sech_Propuesta_Indecente"
+
+# ============ PEAK (highest energy, drops, crowd sing-along) ============
+dl "Reggaeton_Party/Peak" "Daddy Yankee Con Denzel" "37_Daddy_Yankee_Con_Denzel"
+dl "Reggaeton_Party/Peak" "Daddy Yankee Estreno de Jeans" "38_Daddy_Yankee_Estreno_de_Jeans"
+dl "Reggaeton_Party/Peak" "Daddy Yankee La Notoria" "39_Daddy_Yankee_La_Notoria"
+dl "Reggaeton_Party/Peak" "Daddy Yankee La Rompí" "40_Daddy_Yankee_La_Rompi"
+dl "Reggaeton_Party/Peak" "Daddy Yankee X" "41_Daddy_Yankee_X"
+dl "Reggaeton_Party/Peak" "Farruko Pepas" "42_Farruko_Pepas"
+dl "Reggaeton_Party/Peak" "Farruko El General" "43_Farruko_El_General"
+dl "Reggaeton_Party/Peak" "El Alfa La Mama de la Mama" "44_El_Alfa_La_Mama"
+dl "Reggaeton_Party/Peak" "El Alfa Pega y Vuela" "45_El_Alfa_Pega_y_Vuela"
+dl "Reggaeton_Party/Peak" "Bad Bunny Bichita" "46_Bad_Bunny_Bichita"
+dl "Reggaeton_Party/Peak" "Bad Bunny Me Porto Bonito" "47_Bad_Bunny_Me_Porto_Bonito"
+dl "Reggaeton_Party/Peak" "Bad Bunny DÁKITI" "48_Bad_Bunny_Dakiti"
+dl "Reggaeton_Party/Peak" "Karol G Bichota" "49_Karol_G_Bichota"
+dl "Reggaeton_Party/Peak" "Karol G Prohibida" "50_Karol_G_Prohibida"
+dl "Reggaeton_Party/Peak" "Shakira Bzrp Music Sessions Vol 53 Bizarrap" "51_Shakira_Bzrp_Vol53"
+dl "Reggaeton_Party/Peak" "Shakira Waka Waka" "52_Shakira_Waka_Waka"
+dl "Reggaeton_Party/Peak" "Shakira Hips Dont Lie" "53_Shakira_Hips_Dont_Lie"
+dl "Reggaeton_Party/Peak" "Tainy Titi Me Pregunto" "54_Tainy_Titi"
+dl "Reggaeton_Party/Peak" "Tainy Yandel Yandel" "55_Tainy_Yandel"
+dl "Reggaeton_Party/Peak" "Rauw Alejandro Prohibido" "56_Rauw_Alejandro_Prohibido"
+dl "Reggaeton_Party/Peak" "Rauw Alejandro Beso" "57_Rauw_Alejandro_Beso"
+dl "Reggaeton_Party/Peak" "Beyoncé Shakira Bizarrap Bzrp Music Sessions Vol 53" "58_Bzrp_Vol53"
+dl "Reggaeton_Party/Peak" "Peso Pluma Eslabon Armado Ella Baila Sola" "59_Peso_Pluma_Ella_Baila_Sola"
+dl "Reggaeton_Party/Peak" "Grupo Frontera Bad Bunny un x100to" "60_Grupo_Frontera_un_x100to"
+
+# ============ CLOSING (sing-along, hands up) ============
+dl "Reggaeton_Party/Closing" "Daddy Yankee La Tortura" "61_Daddy_Yankee_La_Tortura"
+dl "Reggaeton_Party/Closing" "Daddy Yankee Rompiendo Reglas" "62_Daddy_Yankee_Rompiendo_Reglas"
+dl "Reggaeton_Party/Closing" "Luis Fonsi Daddy Yankee Despacito" "63_Despacito"
+dl "Reggaeton_Party/Closing" "Ozuna Sola" "64_Ozuna_Sola_Closing"
+dl "Reggaeton_Party/Closing" "Nicky Jam Con Calma" "65_Nicky_Jam_Con_Calma"
+dl "Reggaeton_Party/Closing" "Wisin y Yandel Dile" "66_Wisin_Yandel_Dile"
+dl "Reggaeton_Party/Closing" "Don Omar Papi Te Quiero" "67_Don_Omar_Papi_Te_Quiero"
+dl "Reggaeton_Party/Closing" "Bad Bunny Yonaguni" "68_Bad_Bunny_Yonaguni_Closing"
+
+echo ""
+echo "Done! Check Reggaeton_Party/ folder."   
